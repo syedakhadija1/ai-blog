@@ -6,8 +6,9 @@ import { Clock, User } from "lucide-react"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import type { Post } from "@/lib/posts"
+
 import { motion } from "framer-motion"
+import { Post } from "@/lib/types"
 
 interface PostCardProps {
   post: Post
