@@ -1,6 +1,6 @@
 import { Post } from './types'
 
-export const posts: Post[] = [
+export const post: Post[] = [
   {
     id: "1",
     title: "The Future of Web Development",
@@ -109,9 +109,9 @@ export const posts: Post[] = [
 ]
 
 export async function getPosts(): Promise<Post[]> {
-  return posts
+  return post
 }
 
 export async function getPost(id: string): Promise<Post | undefined> {
-  return posts.find(post => post.id === id)
+  return post.find(post => post.id === id)
 }
